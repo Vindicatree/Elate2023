@@ -460,10 +460,18 @@ header nav button a:hover::before{
     width: 200px;
     margin-bottom: 30px;
     font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.card1 ul li{
+    list-style: none;
 }
 
 .card1 ul li a{
     transition: .2s;
+    text-decoration: none;
+    font-size: 23px;
+    color: #000;
 }
 
 .card1 ul li a:hover{
