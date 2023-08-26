@@ -103,7 +103,7 @@ html{
 
 header{
     --text: #fff;
-    --reverse_text: #000;
+    --reverse_text: #1a1a1a;
     --reverse_background: transparent;
     --background: transparent;
 
@@ -151,6 +151,11 @@ button a{
     font-weight: 400;
     padding: 5px 0px;
     position: relative;
+    transition: .2s;
+}
+
+.contact-nav{
+    display: none;
 }
 
 header nav button a::before{
@@ -211,7 +216,7 @@ header nav button a:hover::before{
 
 .nav_scrolled{
     --text: #000;
-    --reverse_text: #fff;
+    --reverse_text: #f2f2f2;
     --reverse_background: #000;
     --background: #f2f2f2;
 }
@@ -219,6 +224,62 @@ header nav button a:hover::before{
 nav{
     width: 50%;
     text-align: center;
+}
+
+#menu-icon{
+    color: var(--text);
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1250px){
+    button a{
+        font-size: 20px;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1146px){
+    #menu-icon{
+        display: block;
+    }
+
+    nav{
+        position: absolute;
+        top: 110%;
+        right: -100%;
+        width: 300px;
+        height: 29vh;
+        border-radius: 15px;
+        background-color: var(--reverse_text);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid var(--text);
+        transition: all .4s ease;
+    }
+
+    button{
+        padding: 10px 0px;
+    }
+
+    .contact-nav{
+        display: block;
+    }
+
+    .contact{
+        display: none;
+    }
+
+    button a:active{
+        transform: translateY(-2px);
+    }
+
+    nav.open{
+        right: 2%;
+    }
 }
 
 /*hero fill*/
