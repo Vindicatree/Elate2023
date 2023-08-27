@@ -355,6 +355,50 @@ nav{
     transform: scale(1);
 }
 
+@media(max-width: 496px){
+    .fill{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        left: -2px;
+        place-items: center;
+        justify-content: center;
+    }
+    .text2{
+        font-size: 25px;
+    }
+    .text_line3{
+        justify-content: center;
+    }
+    .text3{
+        font-size: 30px;
+    }
+    .text1{
+        font-size: 35px;
+    }
+    .text1 span{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 440px){
+    .text1{
+        font-size: 30px;
+    }
+    .text1 span{
+        font-size: 35px;
+    }
+    .text2{
+        font-size: 20px;
+    }
+    .text_line3{
+        justify-content: center;
+    }
+    .text3{
+        font-size: 25px;
+    }
+}
+
 /*Introduction page*/
 
 .introduction_page{
@@ -378,6 +422,7 @@ nav{
 .cage{
     display: flex;
     flex-direction: column;
+    transition: .2s;
 }
 
 .heading{
@@ -386,6 +431,7 @@ nav{
     font-weight: 800;
     padding-top: 8%;
     margin-left: 30px;
+    transition: .2s;
 }
 
 .introduction_page .cage .p1{
@@ -409,6 +455,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: .2s;
 }
 
 .sambutan_kepsek img{
@@ -427,6 +474,7 @@ nav{
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    transition: .2s;
 }
 
 .sambutan_kepsek .p2{
@@ -436,6 +484,69 @@ nav{
     width: 90%;
 }
 
+@media(max-width: 972px){
+    .introduction_page{
+        height: 200vh;
+    }
+    .sambutan_kepsek{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+        padding: 10px 0px;
+    }
+    .text_sambutan{
+        text-align: justify;
+        margin-left: -5px;
+        place-items: center;
+        margin-top: 40px;
+    }
+    .sambutan_subtitle{
+        text-align: center;
+    }
+    .cage{
+        place-items: center;
+        text-align: center;
+        margin-left: -30px;
+    }
+
+    .p1{
+        text-align: justify;
+        position: relative;
+    }
+}
+
+@media(max-width: 836px){
+    .cage .heading{
+        font-size: 55px;
+    }
+
+    .sambutan_subtitle{
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 560px){
+    .introduction_page{
+        height: 220vh;
+    }
+}
+
+@media(max-width: 450px){
+    .introduction_page{
+        height: 230vh;
+    }
+}
+
+@media(max-width: 440px){
+    .cage .heading{
+        font-size: 32px;
+    }
+    .sambutan_subtitle{
+        font-size: 28px;
+    }
+}
+
 /*social page*/
 
 .social_page{
@@ -443,14 +554,17 @@ nav{
     width: 100%;
     background: #00586B;
     overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .content_line{
     position: relative;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    top: 5%;
     left: 2%;
 }
 
@@ -483,16 +597,15 @@ nav{
     color: #fff;
     font-weight: 200;
     width: 500px;
+    padding-bottom: 10px;
 }
 
 .text .btn a{
     font-size: 30px;
     text-decoration: none;
     color: #fff;
-    display: flex;
-    align-items: center;
+    text-align: center;
     padding: 15px 20px;
-    width: 265px;
     height: 100%;
     border: 5px solid #fff;
     border-radius: 10px;
@@ -503,6 +616,81 @@ nav{
 .text .btn a:hover{
     background-color: #fff;
     color: #000;
+}
+
+@media(max-width: 765px){
+    .content_line img{
+        height: 50vh;
+    }
+}
+
+@media(max-width: 675px){
+    .content_line img{
+        height: 40vh;
+    }
+    .content_line .text .p4_head{
+        font-weight: 800;
+        font-size: 35px;
+        color: #fff;
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content_line .text .p4_body{
+        font-size: 25px;
+        color: #fff;
+        font-weight: 200;
+        width: 350px;
+    }
+
+    .text .btn a{
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        padding: 10px 15px;
+        height: 100%;
+        border: 5px solid #fff;
+        border-radius: 10px;
+        transition: .3s;
+        font-weight: 600;
+    }
+}
+
+@media(max-width: 525px){
+    .content_line{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .social_page{
+        height: 85vh;
+    }
+    .content_line img{
+        height: 40vh;
+        margin-bottom: 10px;
+    }
+    .content_line .text .p4_body{
+        margin-left: -22px;
+    }
+    .content_line .text .p4_head{
+        margin-left: 5px;
+    }
+    .text .btn a{
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        padding: 10px 15px;
+        height: 100%;
+        border: 5px solid #fff;
+        border-radius: 10px;
+        transition: .3s;
+        font-weight: 600;
+        margin-left: -22px;
+    }
 }
 
 /*outro*/
@@ -602,8 +790,53 @@ nav{
     bottom: 0;
     position: absolute;
     text-align: center;
-    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
 }
 
+@media(max-width: 620px){
+    .card1 .label{
+        margin-right: 20px;
+    }
+    .card1 .icons{
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 525px){
+    .outro .header{
+        font-size: 40px;
+    }
+    .card1 ul li a{
+        transition: .2s;
+        text-decoration: none;
+        font-size: 18px;
+        color: #000;
+    }
+    .card1 .label{
+        font-size: 18px;
+        font-weight: 800;
+        text-align: end;
+    }
+    .card1 .icons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 480px){
+    .outro .copyright{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 480px){
+    .outro .copyright{
+        font-size: 13px;
+    }
+}
