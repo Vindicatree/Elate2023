@@ -547,6 +547,21 @@ nav{
     }
 }
 
+@media(max-width: 374px){
+    .introduction_page{
+        height: 250vh;
+    }
+    .sambutan_kepsek{
+        margin-top: 100px;
+    }
+}
+
+@media(max-width: 335px){
+    .introduction_page{
+        height: 260vh;
+    }
+}
+
 /*social page*/
 
 .social_page{
