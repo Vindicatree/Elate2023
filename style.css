@@ -545,7 +545,7 @@ nav{
 
 @media(max-width: 972px){
     .introduction_page{
-        height: 200vh;
+        height: 185vh;
     }
     .sambutan_kepsek{
         display: flex;
