@@ -238,6 +238,23 @@ nav{
         font-size: 20px;
         transition: .2s;
     }
+    .logo_nav{
+        font-size: 45px;
+    }
+    .contact a{
+        text-decoration: none;
+        color: var(--text);
+        padding: 9px 28px;
+        font-size: 22px;
+        font-weight: 800;
+        font-family: 'Mulish', sans-serif;
+        border: 4px solid var(--text);
+        outline: none;
+        background-color: transparent;
+        border-radius: 6px;
+        position: relative;
+        transition: .4s;
+    }
 }
 
 @media (max-width: 1146px){
@@ -279,6 +296,42 @@ nav{
 
     nav.open{
         right: 2%;
+    }
+}
+
+@media (max-width: 1040px){
+    #menu-icon{
+        color: var(--text);
+        font-size: 35px;
+        cursor: pointer;
+        display: block;
+    }
+    .logo_nav{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 630px){
+    #menu-icon{
+        color: var(--text);
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+    }
+    .logo_nav{
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 496px){
+    #menu-icon{
+        color: var(--text);
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+    }
+    .logo_nav{
+        font-size: 30px;
     }
 }
 
@@ -582,6 +635,15 @@ nav{
 
     .sambutan_subtitle{
         font-size: 35px;
+    }
+}
+
+@media(max-width: 715px), (max-height: 843px){
+        .text_sambutan .p2{
+        font-size: 20px;
+    }
+    .introduction_page .cage .p1{
+        font-size: 20px;
     }
 }
 
