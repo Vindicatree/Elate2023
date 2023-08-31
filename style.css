@@ -1131,7 +1131,7 @@ nav{
     }
 }
 
-@media(max-width: 388px){
+@media(max-width: 400px){
     .outro .copyright{
         font-size: 11px;
         height: 28px;
