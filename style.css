@@ -112,7 +112,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px ;
+    padding: 12px 40px ;
     width: 100%;
     font-family: 'Mulish', sans-serif;
     background-color: var(--background);
@@ -123,7 +123,7 @@ header{
 
 .logo_nav{
     color: var(--text);
-    font-size: 50px;
+    font-size: 43px;
     font-weight: 800;
     padding: 10px 30px;
     text-decoration: none;
@@ -147,7 +147,7 @@ button{
 button a{
     text-decoration: none;
     color: var(--text);
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 400;
     padding: 5px 0px;
     position: relative;
@@ -179,8 +179,8 @@ header nav button a:hover::before{
 .contact a{
     text-decoration: none;
     color: var(--text);
-    padding: 10px 30px;
-    font-size: 25px;
+    padding: 8px 25px;
+    font-size: 23px;
     font-weight: 800;
     font-family: 'Mulish', sans-serif;
     border: 4px solid var(--text);
@@ -257,7 +257,36 @@ nav{
     }
 }
 
-@media (max-width: 1146px){
+@media (max-width: 1121px){
+    button a{
+        text-decoration: none;
+        color: var(--text);
+        font-size: 18px;
+        font-weight: 400;
+        padding: 5px 0px;
+        position: relative;
+        transition: .2s;
+    }
+    .logo_nav{
+        font-size: 40px;
+    }
+    .contact a{
+        text-decoration: none;
+        color: var(--text);
+        padding: 8px 26px;
+        font-size: 20px;
+        font-weight: 800;
+        font-family: 'Mulish', sans-serif;
+        border: 4px solid var(--text);
+        outline: none;
+        background-color: transparent;
+        border-radius: 6px;
+        position: relative;
+        transition: .4s;
+    }
+}
+
+@media (max-width: 1051px){
     #menu-icon{
         display: block;
     }
@@ -296,6 +325,51 @@ nav{
 
     nav.open{
         right: 2%;
+    }
+}
+
+@media (max-height: 769px){
+    button{
+        padding: 8px 0px;
+    }
+    button a{
+        font-size: 17px;
+    }
+    nav{
+        position: absolute;
+        top: 110%;
+        right: -100%;
+        width: 280px;
+        height: 29vh;
+        border-radius: 15px;
+        background-color: var(--reverse_text);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid var(--text);
+        transition: all .4s ease;
+    }
+}
+
+@media (max-height: 666px){
+    nav{
+        position: absolute;
+        top: 110%;
+        right: -100%;
+        width: 240px;
+        height: 29vh;
+        border-radius: 15px;
+        background-color: var(--reverse_text);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid var(--text);
+        transition: all .4s ease;
+    }
+    button a{
+        font-size: 14px;
     }
 }
 
@@ -626,6 +700,9 @@ nav{
         text-align: justify;
         position: relative;
     }
+    .introduction_page .cage .heading{
+        font-size: 60px;
+    }
 }
 
 @media(max-width: 836px){
@@ -638,12 +715,24 @@ nav{
     }
 }
 
+@media(max-width: 740px){
+    .sambutan_subtitle{
+        font-size: 30px;
+    }
+}
+
 @media(max-width: 715px), (max-height: 843px){
         .text_sambutan .p2{
         font-size: 20px;
     }
     .introduction_page .cage .p1{
         font-size: 20px;
+    }
+}
+
+@media(max-width: 680px){
+    .introduction_page .cage .heading{
+        font-size: 50px;
     }
 }
 
@@ -656,6 +745,9 @@ nav{
 @media(max-width: 560px){
     .introduction_page{
         height: 220vh;
+    }
+    .introduction_page .cage .heading{
+        font-size: 35px;
     }
 }
 
@@ -691,23 +783,29 @@ nav{
 }
 
 @media(max-width: 374px){
-    .introduction_page{
-        height: 210vh;
-    }
     .sambutan_kepsek{
-        margin-top: 50px;
+        margin-top: 200px;
     }
-    .cage .p1{
-        font-size: 2px;
+    .introduction_page .cage .p1{
+        font-size: 15px;
     }
     .sambutan_subtitle{
         font-size: 26px;
+    }
+    .sambutan_kepsek .p2{
+        font-size: 15px;
     }
 }
 
 @media(max-width: 335px){
     .introduction_page{
         height: 220vh;
+    }
+    .sambutan_subtitle{
+        font-size: 22px;
+    }
+    .introduction_page .cage .heading{
+        font-size: 27px;
     }
 }
 
@@ -923,14 +1021,40 @@ nav{
 .card1 .icons{
     display: flex;
     flex-wrap: wrap;
-    justify-content: end;
     font-size: 25px;
+    float: right;
 }
 
 .card1 .icons a{
     padding: 0px 2px;
     text-decoration: none;
     color: #000;
+}
+
+.addition-card{
+    display: none;
+}
+
+.addition-card .icons a{
+    padding: 0px 1px;
+    text-decoration: none;
+    color: #000;
+}
+
+.addition-card .icons{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.addition-card .label{
+    font-family: 'Quicksand', sans-serif;
+    color: #000;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
 }
 
 .outro .image{
@@ -963,10 +1087,10 @@ nav{
 
 @media(max-width: 620px){
     .card1 .label{
-        margin-right: 20px;
+        margin-right: 25px;
     }
     .card1 .icons{
-        margin-right: 20px;
+        margin-right: 25px;
     }
 }
 
@@ -1013,18 +1137,20 @@ nav{
     .card1 ul li a{
         transition: .2s;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 15px;
         color: #000;
     }
-    .card1 .label{
-        font-size: 16px;
-        font-weight: 800;
-        text-align: end;
+    .card3{
+        display: none;
     }
-    .card1 .icons{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: end;
-        font-size: 18px;
+    .addition-card{
+        display: block;
+    }
+}
+
+@media(max-width: 326px){
+    .outro .copyright{
+        font-size: 10px;
+        height: 26px;
     }
 }
