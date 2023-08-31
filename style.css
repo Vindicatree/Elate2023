@@ -647,6 +647,8 @@ nav{
 .sambutan_kepsek img{
     width: auto;
     height: 50vh;
+    border: 5px solid #052650;
+    border-radius: 15px;
 }
 
 .text_sambutan{
