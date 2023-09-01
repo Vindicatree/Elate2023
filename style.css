@@ -664,34 +664,39 @@ nav{
     color: #000;
 }
 
-.text_sambutan{
-    position: relative;
-    display: inline-block;
+.about_button:hover{
+    cursor: pointer;
 }
 
-.sambutan_kepsek{
+.text_sambutan{
     position: relative;
-    text-align: right;
-    padding: 10px 80px;
+}
+
+.introduction_page .sambutan_kepsek{
     margin-top: 200px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     transition: .2s;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .sambutan_kepsek img{
+    position: relative;
     width: auto;
     height: 50vh;
     border: 5px solid #052650;
     border-radius: 15px;
+    margin-left: 100px;
 }
 
 .text_sambutan{
     display: flex;
     flex-direction: column;
-    align-items: end;
-    margin-left: 20px;
+    align-items: start;
+    margin-left: 100px;
+    position: relative;
+    max-width: 1200px;
 }
 
 .sambutan_subtitle{
@@ -699,7 +704,6 @@ nav{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     transition: .2s;
-    text-align: right;
 }
 
 .sambutan_kepsek .p2{
@@ -713,12 +717,14 @@ nav{
     .introduction_page{
         height: 185vh;
     }
+    .sambutan_kepsek img{
+        margin-left: 0px;
+    }
     .sambutan_kepsek{
         display: flex;
         flex-direction: column;
         justify-content: center;
         place-items: center;
-        padding: 10px 0px;
     }
     .text_sambutan{
         text-align: justify;
@@ -829,10 +835,11 @@ nav{
         font-weight: 300;
         font-family: 'Montserrat', sans-serif;
         width: 85%;
+        margin-left: 5px;
     }
 }
 
-@media(max-width: 374px){
+@media(max-width: 384px){
     .sambutan_kepsek{
         margin-top: 200px;
     }
