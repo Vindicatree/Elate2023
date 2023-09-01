@@ -123,7 +123,7 @@ header{
 
 .logo_nav{
     color: var(--text);
-    font-size: 43px;
+    font-size: 40px;
     font-weight: 800;
     padding: 10px 30px;
     text-decoration: none;
@@ -147,7 +147,7 @@ button{
 button a{
     text-decoration: none;
     color: var(--text);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     padding: 5px 0px;
     position: relative;
@@ -180,7 +180,7 @@ header nav button a:hover::before{
     text-decoration: none;
     color: var(--text);
     padding: 8px 25px;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 800;
     font-family: 'Mulish', sans-serif;
     border: 4px solid var(--text);
@@ -189,6 +189,7 @@ header nav button a:hover::before{
     border-radius: 6px;
     position: relative;
     transition: .4s;
+    margin-left: 10px;
 }
 
 .contact a::before{
@@ -222,8 +223,8 @@ header nav button a:hover::before{
 }
 
 nav{
-    width: 50%;
     text-align: center;
+    display: flex;
 }
 
 #menu-icon{
@@ -235,17 +236,17 @@ nav{
 
 @media (max-width: 1250px){
     button a{
-        font-size: 20px;
+        font-size: 18px;
         transition: .2s;
     }
     .logo_nav{
-        font-size: 45px;
+        font-size: 40px;
     }
     .contact a{
         text-decoration: none;
         color: var(--text);
-        padding: 9px 28px;
-        font-size: 22px;
+        padding: 8px 25px;
+        font-size: 20px;
         font-weight: 800;
         font-family: 'Mulish', sans-serif;
         border: 4px solid var(--text);
@@ -257,7 +258,7 @@ nav{
     }
 }
 
-@media (max-width: 1121px){
+@media (max-width: 1140px){
     button a{
         text-decoration: none;
         color: var(--text);
@@ -286,7 +287,7 @@ nav{
     }
 }
 
-@media (max-width: 1051px){
+@media (max-width: 1070px){
     #menu-icon{
         display: block;
     }
@@ -326,52 +327,51 @@ nav{
     nav.open{
         right: 2%;
     }
+    @media (max-height: 769px){
+        button{
+            padding: 8px 0px;
+        }
+        button a{
+            font-size: 17px;
+        }
+        nav{
+            position: absolute;
+            top: 110%;
+            right: -100%;
+            width: 280px;
+            height: 29vh;
+            border-radius: 15px;
+            background-color: var(--reverse_text);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            border: 1px solid var(--text);
+            transition: all .4s ease;
+        }
+    }
+    @media (max-height: 666px){
+        nav{
+            position: absolute;
+            top: 110%;
+            right: -100%;
+            width: 240px;
+            height: 29vh;
+            border-radius: 15px;
+            background-color: var(--reverse_text);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            border: 1px solid var(--text);
+            transition: all .4s ease;
+        }
+        button a{
+            font-size: 14px;
+        }
+    }
 }
 
-@media (max-height: 769px){
-    button{
-        padding: 8px 0px;
-    }
-    button a{
-        font-size: 17px;
-    }
-    nav{
-        position: absolute;
-        top: 110%;
-        right: -100%;
-        width: 280px;
-        height: 29vh;
-        border-radius: 15px;
-        background-color: var(--reverse_text);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        border: 1px solid var(--text);
-        transition: all .4s ease;
-    }
-}
-
-@media (max-height: 666px){
-    nav{
-        position: absolute;
-        top: 110%;
-        right: -100%;
-        width: 240px;
-        height: 29vh;
-        border-radius: 15px;
-        background-color: var(--reverse_text);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        border: 1px solid var(--text);
-        transition: all .4s ease;
-    }
-    button a{
-        font-size: 14px;
-    }
-}
 
 @media (max-width: 1040px){
     #menu-icon{
@@ -616,8 +616,8 @@ nav{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     padding-top: 8%;
-    margin-left: 30px;
     transition: .2s;
+    margin-left: 30px;
 }
 
 .introduction_page .cage .p1{
@@ -626,6 +626,42 @@ nav{
     width: 80%;
     font-family: 'Montserrat', sans-serif;
     margin-left: 30px;
+}
+
+.aboutline{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    text-align: left;
+    margin-left: 30px;
+    transition: .4s;
+}
+
+.arrow{
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 40px;
+    animation: movement 1s ease forwards running infinite;
+}
+
+@keyframes movement{
+    0%{
+        transform: translateX(0%);
+    }
+    5%{
+        transform: translateX(5%);
+    }
+    100%{
+        transform: translateX(-5%);
+    }
+}
+
+.about_button{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 30px;
+    color: #000;
 }
 
 .text_sambutan{
@@ -663,6 +699,7 @@ nav{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     transition: .2s;
+    text-align: right;
 }
 
 .sambutan_kepsek .p2{
@@ -672,7 +709,7 @@ nav{
     width: 85%;
 }
 
-@media(max-width: 972px){
+@media(max-width: 1070px){
     .introduction_page{
         height: 185vh;
     }
@@ -705,6 +742,10 @@ nav{
     .introduction_page .cage .heading{
         font-size: 60px;
     }
+    .aboutline{
+        text-align: center;
+        justify-content: center;
+    }
 }
 
 @media(max-width: 836px){
@@ -729,6 +770,13 @@ nav{
     }
     .introduction_page .cage .p1{
         font-size: 20px;
+    }
+    .about_button{
+        font-size: 18px;
+    }
+    .arrow{
+        font-size: 20px;
+        padding-top: 5px;
     }
 }
 
@@ -1085,6 +1133,10 @@ nav{
     justify-content: center;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
+}
+
+.b{
+    font-weight: 800;
 }
 
 @media(max-width: 620px){
