@@ -642,6 +642,7 @@ nav{
     padding-left: 20px;
     font-size: 40px;
     animation: movement 1s ease forwards running infinite;
+    color: #6d4424;
 }
 
 @keyframes movement{
@@ -685,7 +686,7 @@ nav{
     position: relative;
     width: auto;
     height: 50vh;
-    border: 5px solid #052650;
+    border: 5px solid #6d4424;
     border-radius: 15px;
     margin-left: 100px;
 }
@@ -871,7 +872,7 @@ nav{
 .social_page{
     height: 65vh;
     width: 100%;
-    background: #00586B;
+    background: #6d4424;
     overflow: hidden;
     align-items: center;
     display: flex;
@@ -1133,7 +1134,7 @@ nav{
 
 .outro .copyright{
     width: 100%;
-    background-color: #b9b9b9;
+    background-color: #ad9884;
     height: 30px;
     bottom: 0;
     position: absolute;
