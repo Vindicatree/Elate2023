@@ -612,7 +612,7 @@ nav{
 }
 
 .heading{
-    font-size: 70px;
+    font-size: 60px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     padding-top: 8%;
@@ -713,7 +713,7 @@ nav{
     width: 85%;
 }
 
-@media(max-width: 1070px){
+@media(max-width: 1100px){
     .introduction_page{
         height: 185vh;
     }
@@ -778,10 +778,10 @@ nav{
         font-size: 20px;
     }
     .about_button{
-        font-size: 18px;
+        font-size: 22px;
     }
     .arrow{
-        font-size: 20px;
+        font-size: 23px;
         padding-top: 5px;
     }
 }
@@ -912,7 +912,7 @@ nav{
 }
 
 .content_line .text .p4_body{
-    font-size: 35px;
+    font-size: 28px;
     color: #fff;
     font-weight: 200;
     width: 500px;
@@ -990,12 +990,15 @@ nav{
     .content_line img{
         height: 40vh;
         margin-bottom: 10px;
+        margin-top: -30px;
     }
     .content_line .text .p4_body{
         margin-left: -22px;
+        font-size: 20px;
     }
     .content_line .text .p4_head{
         margin-left: 5px;
+        font-size: 30px;
     }
     .text .btn a{
         font-size: 20px;
