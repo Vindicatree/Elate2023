@@ -677,31 +677,36 @@ nav{
     position: relative;
 }
 
-.introduction_page .sambutan_kepsek{
-    margin-top: 200px;
+.budiarea{
+    height: 69%;
+    width: 100%;
     display: flex;
-    transition: .2s;
     align-items: center;
     justify-content: center;
-    width: 100%;
+}
+
+.introduction_page .sambutan_kepsek{
+    margin-top: 150px auto;
+    transition: .2s;
+    width: 70%;
+    display: flex;
+    align-items: center;
 }
 
 .sambutan_kepsek img{
-    position: relative;
     width: auto;
-    height: 50vh;
+    height: 45vh;
     border: 5px solid #6d4424;
     border-radius: 15px;
-    margin-left: 100px;
+    float: left;
+    margin-right: 40px;
 }
 
 .text_sambutan{
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-left: 100px;
-    position: relative;
-    max-width: 1200px;
+    text-align: justify;
 }
 
 .sambutan_subtitle{
@@ -715,7 +720,6 @@ nav{
     font-size: 22px;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
-    width: 85%;
 }
 
 @media(max-width:1350px){
@@ -733,34 +737,42 @@ nav{
     }
 }
 
+@media(max-width: 1220px){
+    .sambutan_subtitle{
+        font-size: 25px;
+    }
+}
+
 @media(max-width: 1100px){
     .introduction_page{
-        height: 185vh;
+        height: 150vh;
     }
+    .introduction_page .sambutan_kepsek{
+        margin: 150px auto;
+        transition: .2s;
+        width: 70%;
+        display: block;
+    }
+    
     .sambutan_kepsek img{
-        margin-left: 0px;
-    }
-    .sambutan_kepsek{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        place-items: center;
+        width: auto;
+        height: 30vh;
+        border: 5px solid #6d4424;
+        border-radius: 15px;
+        float: left;
+        margin-right: 30px;
     }
     .text_sambutan{
-        text-align: justify;
-        margin-left: -5px;
-        place-items: center;
-        margin-top: 40px;
+        display: block;
     }
     .sambutan_subtitle{
-        text-align: center;
+        text-align: left;
     }
     .cage{
         place-items: center;
         text-align: center;
         margin-left: -30px;
     }
-
     .p1{
         text-align: justify;
         position: relative;
@@ -774,20 +786,26 @@ nav{
     }
 }
 
+@media(max-width: 956px){
+    .sambutan_subtitle{
+        font-size: 22px;
+    }
+}
+
 @media(max-width: 836px){
     .cage .heading{
         font-size: 55px;
     }
-
     .sambutan_subtitle{
-        font-size: 35px;
+        font-size: 20px;
+    }
+    .sambutan_kepsek img{
+        height: 30vh;
+        width: auto;
     }
 }
 
 @media(max-width: 740px){
-    .sambutan_subtitle{
-        font-size: 30px;
-    }
 }
 
 @media(max-width: 715px), (max-height: 843px){
@@ -808,40 +826,51 @@ nav{
 
 @media(max-width: 680px){
     .introduction_page .cage .heading{
-        font-size: 50px;
+        font-size: 40px;
     }
 }
 
 @media(max-width: 640px){
-    .sambutan_kepsek{
-        margin-top: 60px;
+    .sambutan_kepsek img{
+        width: auto;
+        height: 25vh;
+        border: 3px solid #6d4424;
+        border-radius: 5px;
+        float: left;
+        margin-right: 30px;
+    }
+    .sambutan_subtitle{
+        font-size: 20px;
+    }
+    .text_sambutan .p2{
+        font-size: 15px;
     }
 }
 
 @media(max-width: 580px){
     .introduction_page{
-        height: 220vh;
+        height: 150vh;
     }
     .introduction_page .cage .heading{
-        font-size: 35px;
+        font-size: 28px;
+    }
+    .sambutan_subtitle{
+        font-size: 18px;
     }
 }
 
 @media(max-width: 468px){
     .introduction_page{
-        height: 230vh;
+        height: 150vh;
     }
 }
 
 @media(max-width: 440px){
     .introduction_page{
-        height: 200vh;
+        height: 150vh;
     }
     .cage .heading{
         font-size: 32px;
-    }
-    .sambutan_subtitle{
-        font-size: 28px;
     }
     .introduction_page .cage .p1{
         font-size: 18px;
@@ -850,18 +879,20 @@ nav{
         font-family: 'Montserrat', sans-serif;
         margin-left: 30px;
     }
-    .sambutan_kepsek .p2{
-        font-size: 18px;
-        font-weight: 300;
-        font-family: 'Montserrat', sans-serif;
-        width: 85%;
-        margin-left: 5px;
+    .sambutan_subtitle{
+        font-size: 16px;
     }
-}
-
-@media(max-width: 393px){
-    .introduction_page{
-        height: 210vh;
+    .introduction_page .sambutan_kepsek{
+        margin: 150px auto;
+        transition: .2s;
+        width: 85%;
+    }
+    .budiarea{
+        height: 60%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -872,9 +903,6 @@ nav{
     .introduction_page .cage .p1{
         font-size: 15px;
     }
-    .sambutan_subtitle{
-        font-size: 26px;
-    }
     .sambutan_kepsek .p2{
         font-size: 15px;
     }
@@ -882,13 +910,10 @@ nav{
 
 @media(max-width: 335px){
     .introduction_page{
-        height: 220vh;
-    }
-    .sambutan_subtitle{
-        font-size: 22px;
+        height: 150vh;
     }
     .introduction_page .cage .heading{
-        font-size: 27px;
+        font-size: 20px;
     }
 }
 
@@ -1004,42 +1029,56 @@ nav{
 
 @media(max-width: 525px){
     .content_line{
-        display: flex;
-        flex-direction: column;
+        width: 100%;
+        left: 0;
         justify-content: center;
-        align-items: center;
-        text-align: center;
     }
     .social_page{
-        height: 85vh;
+        height: 40vh;
     }
     .content_line img{
-        height: 40vh;
-        margin-bottom: 10px;
-        margin-top: -30px;
+        height: 30vh;
+        margin-left: 30px;
     }
     .content_line .text .p4_body{
-        margin-left: -22px;
-        font-size: 20px;
+        font-size: 18px;
+        width: 300px;
     }
     .content_line .text .p4_head{
-        margin-left: 5px;
-        font-size: 30px;
+        font-size: 25px;
     }
+
+    .content_line .text{
+        width: 300px;
+    }
+
     .text .btn a{
-        font-size: 20px;
+        font-size: 18px;
         text-decoration: none;
         color: #fff;
         text-align: center;
-        padding: 10px 15px;
+        padding: 8px 10px;
         height: 100%;
         border: 5px solid #fff;
         border-radius: 10px;
         transition: .3s;
         font-weight: 600;
-        margin-left: -22px;
     }
 
+}
+
+@media(max-width: 440px){
+    .content_line .text .p4_body{
+        font-size: 18px;
+        width: 230px;
+    }
+    .content_line .text .p4_head{
+        font-size: 25px;
+    }
+    .content_line img{
+        height: 30vh;
+        margin-left: 100px;
+    }
 }
 
 @media(max-width: 345px){
