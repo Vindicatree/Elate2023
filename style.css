@@ -290,6 +290,7 @@ nav{
 @media (max-width: 1070px){
     #menu-icon{
         display: block;
+        margin-right: 30px;
     }
 
     nav{
@@ -328,7 +329,7 @@ nav{
         right: 2%;
     }
     header{
-        padding: 5px 40px ;
+        padding: 5px 0px ;
     }
     @media (max-height: 769px){
         button{
@@ -893,6 +894,12 @@ nav{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    @media(max-height: 800px){
+        .introduction_page{
+            height: 180vh;
+        }
     }
 }
 
