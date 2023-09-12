@@ -593,7 +593,7 @@ nav{
 /*Introduction page*/
 
 .introduction_page{
-    height: 140vh;
+    height: 80vh;
     width: 100%;
     background-color: #f2f2f2;
     overflow: hidden;
@@ -614,13 +614,18 @@ nav{
     display: flex;
     flex-direction: column;
     transition: .2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 0;
 }
 
 .heading{
     font-size: 60px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    padding-top: 8%;
     transition: .2s;
     margin-left: 30px;
 }
@@ -672,56 +677,6 @@ nav{
 
 .about_button:hover{
     cursor: pointer;
-}
-
-.text_sambutan{
-    position: relative;
-}
-
-.budiarea{
-    height: 69%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.introduction_page .sambutan_kepsek{
-    margin-top: 150px auto;
-    transition: .2s;
-    width: 70%;
-    display: flex;
-    align-items: center;
-}
-
-.sambutan_kepsek img{
-    width: auto;
-    height: 45vh;
-    border: 5px solid #6d4424;
-    border-radius: 15px;
-    float: left;
-    margin-right: 40px;
-}
-
-.text_sambutan{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    text-align: justify;
-}
-
-.sambutan_subtitle{
-    font-size: 35px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    transition: .2s;
-    text-align: left;
-}
-
-.sambutan_kepsek .p2{
-    font-size: 22px;
-    font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
 }
 
 @media(max-width:1350px){
