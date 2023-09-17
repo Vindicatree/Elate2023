@@ -702,7 +702,7 @@ nav{
 
 @media(max-width: 1100px){
     .introduction_page{
-        height: 150vh;
+        height: 90vh;
     }
     .introduction_page .sambutan_kepsek{
         margin: 150px auto;
@@ -810,7 +810,7 @@ nav{
 
 @media(max-width: 580px){
     .introduction_page{
-        height: 150vh;
+        height: 90vh;
     }
     .introduction_page .cage .heading{
         font-size: 28px;
@@ -824,25 +824,25 @@ nav{
 
     @media (max-height: 665px) {
         .introduction_page{
-            height: 180vh;
+            height: 100vh;
         }
     }
 }
 
 @media(max-width: 468px){
     .introduction_page{
-        height: 150vh;
+        height: 90vh;
     }
     @media (max-height: 665px) {
         .introduction_page{
-            height: 180vh;
+            height: 100vh;
         }
     }
 }
 
 @media(max-width: 440px){
     .introduction_page{
-        height: 150vh;
+        height: 90vh;
     }
     .cage .heading{
         font-size: 32px;
@@ -872,7 +872,7 @@ nav{
 
     @media(max-height: 800px){
         .introduction_page{
-            height: 180vh;
+            height: 100vh;
         }
     }
 }
@@ -891,11 +891,11 @@ nav{
 
 @media(max-width: 335px){
     .introduction_page{
-        height: 150vh;
+        height: 100vh;
     }
     @media(max-height: 800px){
         .introduction_page{
-            height: 180vh;
+            height: 100vh;
         }
     }
     .introduction_page .cage .heading{
@@ -943,7 +943,7 @@ nav{
 
 .content_line .text .p4_head{
     font-weight: 800;
-    font-size: 55px;
+    font-size: 50px;
     color: #fff;
     width: 500px;
 }
