@@ -66,23 +66,23 @@ html{
 @keyframes animate{
     0%
     {
-        background-image: url("ELATE1.JPG");
+        background-image: url("ELATEBG1.jpg") ;
     }
     20%
     {
-        background-image: url("ELATE2.JPG");
+        background-image: url("ELATEBG2.jpg");
     }
     40%
     {
-        background-image: url("ELATE3.JPG");
+        background-image: url("ELATEBG3.jpg");
     }
     60%
     {
-        background-image: url("ELATE4.JPG");
+        background-image: url("ELATEBG4.jpg");
     }
     80%
     {
-        background-image: url("ELATE5.JPG");
+        background-image: url("ELATEBG5.jpg");
     }
     100%
     {
@@ -610,6 +610,11 @@ nav{
     right: 0;
 }
 
+.carousel{
+    width: 100%;
+    height: 100%;
+}
+
 .cage{
     display: flex;
     flex-direction: column;
@@ -635,7 +640,7 @@ nav{
     font-weight: 300;
     width: 80%;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 30px;
+    text-align: center;
 }
 
 .aboutline{
