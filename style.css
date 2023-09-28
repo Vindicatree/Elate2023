@@ -595,7 +595,10 @@ nav{
 .introduction_page{
     height: 80vh;
     width: 100%;
-    background-color: #f2f2f2;
+    background: url(carousel\ bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .Container{
@@ -916,7 +919,10 @@ nav{
 .social_page{
     height: 65vh;
     width: 100%;
-    background: #6d4424;
+    background: rgba(0,0,0,0.56) url(Bg.jpeg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
     overflow: hidden;
     align-items: center;
     display: flex;
