@@ -595,10 +595,7 @@ nav{
 .introduction_page{
     height: 80vh;
     width: 100%;
-    background: url(carousel\ bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #f2f2f2;
 }
 
 .Container{
